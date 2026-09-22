@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2 - Макет сайта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="image.png" alt="Логотип сайта" width="80" height="80">
+            </div>
+            <!-- Название сайта -->
+            <h1 class="site-title">
+                Название сайта
+            </h1>
+            <!-- Меню навигации -->
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Ссылка 1</a></li>
+                    <li><a href="#">Ссылка 2</a></li>
+                    <li><a href="#">Ссылка 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Список гиперссылок -->
+        <section class="content-block">
+            <h2>Список гиперссылок</h2>
+            <ul>
+                <li><a href="#">Гиперссылка 1</a></li>
+                <li><a href="#">Гиперссылка 2</a></li>
+                <li><a href="#">Гиперссылка 3</a></li>
+            </ul>
+        </section>
+
+        <!-- Таблица -->
+        <section class="content-block">
+            <h2>Таблица</h2>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                        <th>Колонка 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Объединенная ячейка -->
+                    <tr>
+                        <td colspan="4">Ячейка 1 в объединении со 2, 3, 4</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 2.1</td>
+                        <td>Ячейка 2.2</td>
+                        <td>Ячейка 2.3</td>
+                        <td>Ячейка 2.4</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 3.1</td>
+                        <td>Ячейка 3.2</td>
+                        <td>Ячейка 3.3</td>
+                        <td>Ячейка 3.4</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Ячейка 4.1 в объединении с 5.1</td>
+                        <td>Ячейка 4.2</td>
+                        <td>Ячейка 4.3</td>
+                        <td>Ячейка 4.4</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 5.2</td>
+                        <td>Ячейка 5.3</td>
+                        <td>Ячейка 5.4</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 6.1</td>
+                        <td>Ячейка 6.2</td>
+                        <td>Ячейка 6.3</td>
+                        <td>Ячейка 6.4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Форма -->
+        <section class="content-block">
+            <h2>Форма</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>(c) Сергей Синица</p>
+        </div>
+    </footer>
+
+</body>
+</html>
