@@ -1,167 +1,114 @@
-﻿{
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    background-attachment: fixed; /* Фон не будет обрываться при прокрутке вниз */
 }
 
-body {
-    font-family: Arial, 'Times New Roman';
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+.full-width {
+    width: 100%;
+    background-color: #7997d9;
+    color: #000;
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
-/* --- Шапка сайта --- */
-#main-header {
-    width: 100%;
-    background-color: #7aa3d1; 
-    border-bottom: 2px solid #5a83b1;
-    padding: 10px 0;
+header {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5a76b5;
 }
 
-.header-content {
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; 
 }
 
-.logo img {
-    border-radius: 50%; 
-    background-color: #fff;
-    display: block;
+#site-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 12px;
 }
 
 .site-title {
-    font-size: 1.5em;
     font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a {
     margin-left: 20px;
-    flex-grow: 1; 
-}
-
-/* Меню навигации */
-#main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-#main-nav a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: 1px solid transparent;
+    color: #000;
 }
 
-    #main-nav a:hover {
-        background-color: #5a83b1;
-        border-radius: 4px;
+    nav a:hover {
+        text-decoration: underline;
     }
-
-/* --- Основной контент --- */
-main {
-    padding: 20px 0;
-}
 
 .content-block {
-    background-color: #7aa3d1;
-    margin-bottom: 20px;
+    background-color: #92abdf;
     padding: 20px;
-    border-radius: 4px;
-    color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #5a76b5;
 }
 
-    .content-block h2 {
-        margin-bottom: 15px;
-        border-bottom: 1px solid #fff;
-        padding-bottom: 5px;
-    }
+h1, h2 {
+    margin-top: 0;
+}
 
-    .content-block ul {
-        list-style: none;
-    }
-
-        .content-block ul li a {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-/* --- Таблица --- */
 #data-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
     background-color: #fff;
-    color: #333;
 }
 
     #data-table th,
     #data-table td {
-        border: 1px solid #ddd;
-        padding: 8px;
+        border: 1px solid #000;
+        padding: 10px;
         text-align: left;
     }
 
     #data-table th {
-        background-color: #5a83b1;
-        color: #fff;
-    }
-
-    /* Чередование фона строк (четные/нечетные) */
-    #data-table tbody tr:nth-child(even) {
-        background-color: #e9e9e9; 
-    }
-
-    #data-table tbody tr:nth-child(odd) {
-        background-color: #ffffff; 
-    }
-
-/* --- Форма --- */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-}
-
-    form label {
+        background-color: #d1dcf5;
         font-weight: bold;
     }
 
-    form input {
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+    #data-table tbody tr:nth-child(odd) {
+        background-color: #ffffff;
     }
 
-    form button {
-        padding: 10px;
-        background-color: #5a83b1;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1em;
+    #data-table tbody tr:nth-child(even) {
+        background-color: #e8eefa;
     }
 
-        form button:hover {
-            background-color: #3e6a96;
-        }
-
-/* --- Подвал --- */
-#main-footer {
-    width: 100%;
-    background-color: #7aa3d1;
-    color: #fff;
+.merged-cell {
     text-align: center;
+    font-weight: bold;
+}
+
+footer {
     padding: 20px 0;
     margin-top: 20px;
-    border-top: 2px solid #5a83b1;
+    border-top: 2px solid #5a76b5;
+}
+
+.footer-container {
+    text-align: left;
 }
